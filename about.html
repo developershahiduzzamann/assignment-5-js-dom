@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5cd4cb7ac6.js" crossorigin="anonymous"></script>
+    <!--Tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bgPrimary: '#F9F7F3',
+                btnPrimary: '#B4F461', 
+                btnSecondary:'rgba(17, 17, 17, 0.05)',
+                textPrimary: 'rgba(17, 17, 17, 0.7)',
+                textSecondary: 'rgba(17, 17, 17, 0.4)',
+                border: 'rgba(17, 17, 17, 0.1)',
+                fColor: 'rgb(249, 247, 243)',
+              },
+              fontFamily: {
+                lexend: ['Lexend', 'system-ui'],
+              },
+            },
+          },
+        }
+    </script>  
+</head>
+<body id="font-lexend">
+    <!-- header section Start -->
+    <header>
+        <!-- nav section Start -->
+        <section class="bg-bgPrimary ">
+            <div class="container mx-auto ">
+                <div class="flex justify-between items-center pt-4 pb-12 ">
+                    <div class="bg-btnPrimary px-8 py-2 rounded-lg">
+                        <a href="./index.html"><button class="font-bold text-xl">Home</button></a>
+                    </div>
+                    <div class="flex items-center"> 
+                        <img src="./assets/images/logo.png" alt="">
+                        <h1 class="ml-5 text-xl font-bold">Donate Bangladesh</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/images/coin.png" alt="">
+                        <h1 class="ml-5 text-xl text-textPrimary font-bold ">5500 BDT</h1>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <!-- donation section Start -->
+         <section class="mt-16">
+            <div class="container mx-auto flex justify-center">
+                <div class="">
+                    <button class="font-bold text-xl bg-btnPrimary px-10 py-3 rounded-lg">Donation</button>
+                </div>
+                <div class="ml-5">
+                    <button class="font-bold text-xl text-textPrimary px-10 py-3 rounded-lg border-2 border-border">History</button>
+                </div>
+            </div>
+         </section>
+        <section></section>
+    </header>
+    <!-- main section Start -->
+    <main>
+        <section class="mt-6">
+            <div class="container mx-auto">
+                <div class="mt-8 mb-5">
+                    <h1 class="text-2xl font-bold">Important FAQ <i class="fa-regular fa-comment ml-1 text-4xl"></i></h1>
+                </div>
+                <div tabindex="0" class="collapse collapse-arrow border rounded-b-md">
+                    <div class="collapse-title text-xl font-semibold">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                      <p class="font-medium">
+                        The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage in a hierarchical tree form, where each node corresponds to a part of the document (such as elements, attributes, and text). The DOM allows developers to interact with the HTML or XML document structure, making it possible to dynamically change the content, structure, and style of the page using programming languages like JavaScript.</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-arrow border rounded-none">
+                    <div class="collapse-title text-xl font-semibold">How do you select an element form the DOM?</div>
+                    <div class="collapse-content">
+                      <p class="font-medium">To select an element from the DOM using JavaScript, there are several methods available. Each method targets elements based on different properties such as id, class, tag name, or more advanced selectors like CSS selectors. Here's a breakdown of some commonly used methods</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-arrow border rounded-none">
+                    <div class="collapse-title text-xl font-semibold">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                      <p class="font-medium">Event delegation is a technique in the DOM where you take advantage of event bubbling to handle events at a higher level (like a parent element) rather than attaching event listeners to each individual child element. This means that instead of adding an event listener to multiple child elements, you add it to a parent element and determine which child was interacted with by checking the event.target property.
+
+                      </p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-arrow border rounded-t-md">
+                    <div class="collapse-title text-xl font-semibold">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                      <p class="font-medium">Manipulating an element's attributes and styles using the DOM is one of the key functionalities of JavaScript. You can easily change, add, or remove attributes (such as src, href, alt, etc.) and apply styles (such as color, font-size, background, etc.) to elements dynamically.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
