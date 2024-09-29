@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!--Tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bgPrimary: '#F9F7F3',
+                btnPrimary: '#B4F461', 
+                btnSecondary:'rgba(17, 17, 17, 0.05)',
+                textPrimary: 'rgba(17, 17, 17, 0.7)',
+                textSecondary: 'rgba(17, 17, 17, 0.4)',
+                border: 'rgba(17, 17, 17, 0.1)',
+                fColor: 'rgb(249, 247, 243)',
+              },
+              fontFamily: {
+                lexend: ['Lexend', 'system-ui'],
+              },
+            },
+          },
+        }
+    </script>  
+</head>
+<body id="font-lexend">
+    <!-- header section Start -->
+    <header class="relative ">
+        <!-- nav section Start -->
+        <section class="bg-bgPrimary fixed top-0 left-0 right-0">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center pt-4 pb-12 mx-5">
+                    <div class="bg-btnPrimary px-8 py-2 rounded-lg">
+                        <a href="./about.html"><button class="font-bold text-xl">Blog</button></a>
+                    </div>
+                    <div class="flex items-center"> 
+                        <img src="./assets/images/logo.png" alt="">
+                        <h1 class="ml-5 text-xl font-bold">Donate Bangladesh</h1>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/images/coin.png" alt="">
+                        <h1 class="ml-5 text-xl text-textPrimary font-bold ">5500 BDT</h1>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <!-- donation section Start -->
+         <section class="mt-[57px] fixed top-14 left-0 right-0 bg-btnSecondary py-10 ">
+            <div class="container mx-auto flex justify-center ">
+                <div class="">
+                    <a href="./index.html"><button class="font-bold text-xl border-2 rounded-lg border-border  px-10 py-3">Donation</button></a>
+                </div>
+                <div class="ml-5">
+                    <button class="font-bold text-xl text-textPrimary px-10 py-3 rounded-lg  bg-btnPrimary">History</button>
+                </div>
+            </div>
+         </section>
+        <section></section>
+    </header>
+    <!-- main section Start -->
+    <main>
+        <div class="container mx-auto">
+            <div class="mt-72 mx-5">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bg-fColor py-10 mt-14"></div>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
