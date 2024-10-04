@@ -34,7 +34,7 @@
 </head>
 <body id="font-lexend">
     <!-- header section Start -->
-    <header class="relative ">
+    <header class="">
         <!-- nav section Start -->
         <section class="bg-bgPrimary fixed top-0 left-0 right-0">
             <div class="container mx-auto">
@@ -48,14 +48,15 @@
                     </div>
                     <div class="flex items-center">
                         <img src="./assets/images/coin.png" alt="">
-                        <h1 class="ml-5 text-xl text-textPrimary font-bold ">5500 BDT</h1>
+                        <h1 id="main-balance" class="ml-3 text-xl text-textPrimary font-bold ">5500</h1>
+                        <h1 class="text-xl text-textPrimary font-bold ml-3">BDT</h1>
                     </div>
                 </div>
              </div>
         </section>
         <!-- donation section Start -->
-         <section class="mt-[57px] fixed top-14 left-0 right-0 bg-btnSecondary py-10 ">
-            <div class="container mx-auto flex justify-center ">
+        <section class="mt-[57px] fixed top-14 left-0 right-0 bg-btnSecondary py-10">
+            <div class="container mx-auto flex justify-center">
                 <div class="">
                     <button class="font-bold text-xl bg-btnPrimary px-10 py-3 rounded-lg">Donation</button>
                 </div>
@@ -64,7 +65,7 @@
                 </div>
             </div>
          </section>
-        <section></section>
+        <section>
     </header>
     <!-- main section Start -->
     <main>
@@ -80,21 +81,22 @@
                             <div class="bg-btnSecondary w-36 h-10 flex items-center justify-center rounded-md mt-5 md:mt-0">
                                 <div class="flex justify-center gap-2 items-center">
                                     <img src="./assets/images/coin.png" alt="">
-                                    <button class="font-semibold text-md text-textPrimary">0 BDT</button>
+                                    <h3 class="font-semibold text-md text-textPrimary" id="account-balance-1">0</h3>
+                                    <h3 class="font-semibold text-md text-textPrimary">BDT</h3>
                                 </div>
                             </div>
                             <div class="mt-5">
                                 <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                             </div>
-                            <div class="mt-6 ">
+                            <div class="mt-6">
                                 <p class="text-base text-textPrimary"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                                 o donate for flood relief in Noakhali, Bangladesh, you can look for organizations.
                                 </p>
                             </div>
                             <div class="mt-6">
-                                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                                <input id="input-add-money"  type="text" placeholder="Write Donation Amount" class="input input-bordered w-full"/>
                             <div class="bg-btnPrimary px-8 py-2 rounded-lg text-center mt-4">
-                                <button class="font-bold text-xl">Donate Now</button>
+                                <button id="" class="font-bold text-xl btn-add-money" data-input="input-add-money"data-balance="account-balance-1">Donate Now</button>
                             </div>
                             </div>
                         </div>
@@ -111,7 +113,8 @@
                                 <div class="bg-btnSecondary w-36 h-10 flex items-center justify-center rounded-md mt-5 md:mt-0">
                                     <div class="flex justify-center gap-2 items-center">
                                         <img src="./assets/images/coin.png" alt="">
-                                        <button class="font-semibold text-md text-textPrimary">0 BDT</button>
+                                        <h3 class="font-semibold text-md text-textPrimary" id="account-balance-2">0</h3>
+                                        <h3 class="font-semibold text-md text-textPrimary">BDT</h3>
                                     </div>
                                 </div>
                                 <div class="mt-5">
@@ -122,9 +125,9 @@
                                     </p>
                                 </div>
                                 <div class="mt-6">
-                                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                                    <input id="input-add-money-1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
                                 <div class="bg-btnPrimary px-8 py-2 rounded-lg text-center mt-4">
-                                    <button class="font-bold text-xl">Donate Now</button>
+                                    <button id="" class="font-bold text-xl btn-add-money" data-input="input-add-money-1" data-balance="account-balance-2">Donate Now</button>
                                 </div>
                                 </div>
                             </div>
@@ -141,7 +144,8 @@
                                 <div class="bg-btnSecondary w-36 h-10 flex items-center justify-center rounded-md mt-5 md:0">
                                     <div class="flex justify-center gap-2 items-center">
                                         <img src="./assets/images/coin.png" alt="">
-                                        <button class="font-semibold text-md text-textPrimary">0 BDT</button>
+                                        <h3 class="font-semibold text-md text-textPrimary" id="account-balance-3">0</h3>
+                                        <h3 class="font-semibold text-md text-textPrimary">BDT</h3>
                                     </div>
                                 </div>
                                 <div class="mt-5">
@@ -152,9 +156,9 @@
                                     </p>
                                 </div>
                                 <div class="mt-6">
-                                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                                    <input id="input-add-money-2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full"/>
                                 <div class="bg-btnPrimary px-8 py-2 rounded-lg text-center mt-4">
-                                    <button class="font-bold text-xl">Donate Now</button>
+                                    <button id="" class="font-bold text-xl btn-add-money" data-input="input-add-money-2" data-balance="account-balance-3">Donate Now</button>
                                 </div>
                                 </div>
                             </div>
